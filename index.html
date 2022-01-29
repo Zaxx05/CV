@@ -1,118 +1,314 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Progress Html</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font logo dari font awesome -->
+    <script src= "https://kit.fontawesome.com/57d5a943a4.js" crossorigin="anonymous"></script>
+    <!-- font logo dari google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Style untuk css -->
+    <style>
+        .umum {color: green;}
+        #Inti {color: red;}
+    </style>
+    <title>Telah Dipelajari</title>
 </head>
+
 <body>
-	<h1>Judul dengan H1 </h1>
-	<h2>Judul dengan H2 </h2>
-	<h3>Judul dengan H3 </h3>
-	<h4>Judul dengan H4 </h4>
-	<h5>Judul dengan H5 </h5>
-	<h6>Judul dengan H6 </h6>
+    <body>
+        <!-- contoh font dari font awesome-->
+        <i class="fas fa-address-card fa-6x"></i>
+        <i class="fas fa-address-card fa-6x fa-rotate-90"></i>
+        <i class="fas fa-address-card fa-6x fa-flip-horizontal"></i>
+        <i class="fas fa-spinner fa-spin fa-6x"></i> 
+        <i class="fas fa-cog fa-pulse fa-6x"></i>
+        <br>
 
-	<!-- garis horizontal -->
-	<hr size: 3, noshade>
-	<!-- break antar kalimat -->
-	<br>
+        <!-- contoh font dari google material -->
+        <span class="material-icons">
+            account_circle
+        </span>
+        <br>
+        
+        <!-- 
+        judul yang awalnya block line bisa jadi inline jika dimasukkan style="display:inline"
+         -->
+        <h1 class="umum" style= "display:inline"> Judul dengan H1 </h1>
+        <h2 class="umum"style= "display:inline">Judul dengan H2 </h2>
+        <h3>Judul dengan H3 </h3>
+        <h4>Judul dengan H4 </h4>
+        <h5>Judul dengan H5 </h5>
+        <h6>Judul dengan H6 </h6>
+    
+        <!-- garis horizontal -->
+        <hr size: 3, noshade>
+        <!-- break antar kalimat -->
+        <br>
+    
+        <p id="Inti"> Paragraf elemen p, <strong> (Tebal dengan strong) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </strong>
+        <em> (Tulisan miring dengan em) tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </em>
+        <mark>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</mark> Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="umum">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus labore id culpa nisi sunt?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus itaque earum debitis sunt neque, eaque reiciendis hic dolorem non odit minus. Delectus sapiente dignissimos iusto corrupti deleniti cupiditate quisquam itaque.</p>
+        <p class="umum">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga accusamus sapiente sequi nobis eaque error eos tenetur perferendis. Itaque quae error modi facilis, reprehenderit, natus magnam, quos enim animi id dicta? Culpa totam, delectus quas atque deleniti obcaecati eveniet! Eum, consectetur magnam aut voluptates porro voluptatum. Animi vero repellendus quibusdam?</p>
+    
+        <!-- gambar -->
+        <!-- 
+        perbedaan img dengan figure adalah figure bisa berisi caption dan details 
+        detail berisi tentang keterangan lebih lanjut tentang sesuatu dan berupa pilihan apakah ingin dilihat atau tidak-->
+        <a href="http://kalteng.litbang.pertanian.go.id/ind/index.php/publikasi-mainmenu-47-47/artikel/185-kalakai-sayuran-lokal-potensial-dan-kaya-manfaat#:~:text=Kalakai%20merupakan%20tanaman%20jenis%20pakis,dan%20berkembang%20di%20Kalimantan%20Tengah." title="Penjelasan Kalakai">
+        <img src= "kalakai.jpg" width= "500" alt="gambar kalakai">
+        </a>
 
-	<p> Paragraf elemen p, <strong> (Tebal dengan strong) Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </strong>
-	<em> (Tulisan miring dengan em) tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </em>
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-	<!-- gambar -->
-	<img src= "kalakai.jpg" width= "500" alt="gambar kalakai">
-	<hr size: 3, noshade>
+        <figure>
+            <a href="http://kalteng.litbang.pertanian.go.id/ind/index.php/publikasi-mainmenu-47-47/artikel/185-kalakai-sayuran-lokal-potensial-dan-kaya-manfaat#:~:text=Kalakai%20merupakan%20tanaman%20jenis%20pakis,dan%20berkembang%20di%20Kalimantan%20Tengah." title="Penjelasan Kalakai">
+            <img src= "kalakai.jpg" width= "500" alt="gambar kalakai">
+            </a>
+            <figcaption>Kalakai</figcaption>
+            <details>
+                <summary>Info</summary>
+                <p>
+                    Kalakai (Stenochlaena palustris) adalah sajanis paku-pakuan angguta suku Blechnaceae. Pucuk wan daun anum kalakai ngini biasa diulah jadi sayuran di bamamacam wilayah sabakannya.
+                </p>
+            </details>
+        </figure>
+        <hr size: 3, noshade>
 
-	<!-- Urutan data -->
-	<ol start="7">
-		<!-- anchor tag -->
-		<a href="aqidah.html"><li> Aqidah </li></a>
-		<li> Tafsir </li>
-		<li> Fiqh </li>
-		<ul>
-			<li> Sholat </li>
-			<li> Zakat </li>
-			<li> Puasa </li>
-			<li> Haji </li>
-		</ul>
-		<li> Hadits </li>
-		<li> Akhlak </li>
-	</ol>
-	<hr size: 3, noshade>
+        <!-- video -->
+        <!-- autoplay langsung mulai dan memakan bandwith kita, controls bisa dikontrol dulu
+        Ditulis diantara tag video untuk menunjukkan browser tidak support -->
+        <video src="/Bilby Short Film/Bilby Short Film.mp4" width="600" controls>
+            the browser not supported
+        </video>
+        <br>
+        
+        <!-- embed video youtube -->
+        <iframe src="https://www.youtube.com/embed/JFVHt8-qB28"></iframe>
+        <br>
 
-	<!-- form -->
-	<form action="mailto:syahidridha05@gmail.com" method="get" enctype="text/plain">
-		First Name: <input type= "text" name="firstname"><br>
-		Last Name: <input type="text" name="lastname"><br>
-		Email: <input type="email" name="email"> <br>
-		Password: <input type="password" name="password"><br>
-		Hari Lahir: <input type="date" name="kelahiran"><br>
-		Kelamin:<br>
-		<input type="radio" name="kelamin" value="male"> Male <br>
-		<input type="radio" name="kelamin" value="female"> Female<br>
-		Kesukaan: <br>
-		<input type="checkbox" name="kesukaan" value="membaca"> Membaca
-		<input type="checkbox" name="kesukaan" value="Menulis"> Menulis <br>
-		File Tambahan
-		<input type="file" name="file tambahan"> <br>
-		Pilihan belajar: <select name= "belajar">
-			<option value="fiqh">Fiqh</option>
-			<option value="aqidah">aqidah</option>
-			<option value="hadits">hadits</option>
-		</select><br>
-		<label>Beri Masukan</label><br>
-		<textarea name="masukan" rows="5" cols="50"></textarea><br>
+        <!-- audio -->
+        <audio src="/24. Taylor Swift - Delicate.mp3" controls></audio>
+    
+        <!-- Urutan data -->
+        <ol start="7">
+            <!-- anchor tag -->
+            <a href="aqidah.html" target="_blank" title="Aqidah"><li> Aqidah </li></a>
+            <li> Tafsir </li>
+            <li> Fiqh </li>
+            <ul>
+                <li> Sholat </li>
+                <li> Zakat </li>
+                <li> Puasa </li>
+                <li> Haji </li>
+            </ul>
+            <li> Hadits </li>
+            <li> Akhlak </li>
+        </ol>
+        <hr size: 3, noshade>
+    
+        <!-- form -->
+        <!-- 
+        action: aksi setelahnya
+        method: penyampaiannya
+        enctype: bentuk penyampaiannya
+        type: tipe dokumen
+        name: nama data
+        value: hasil data
+        placeholder: nama data yang ditulis dalam kotak 
+        required: dokumen tersebut harus diisi
+        label for harus bersama dengan id untuk mengidentifikasi, digunakan agar kata tersebut bisa di klik
+        -->
+        <!-- 
+        input: memasukkan data 
+        select: pilihan data 
+        input list: pilihan data dua
+        perbedaannya yaitu input list bisa kita search dengan huruf
+        input list harus ada data list id dan option value
+        -->
+        <!-- 
+        button untuk menambahkan klik data
+        javascript: onclick untuk pemberitahuan
+         -->
+         <!-- 
+        maxlength: panjang minimal kata
+        minlength: kebalikannya
+          -->
+        <form action="mailto:syahidridha05@gmail.com" method="get" enctype="text/plain">
+            First Name: <input type= "text" name="firstname" placeholder="Firstname" maxlength="6" required><br>
+            First Name: <input type= "text" value="fathir" maxlength="6" readonly><br>
+            Last Name: <input type="text" name="lastname"><br>
+            Email: <input type="email" name="email"> <br>
+            Password: <input type="password" name="password"><br>
+            Hari Lahir: <input type="date" name="kelahiran"><br>
+            Kelamin:<br>
+            <label for="male">
+                <input type="radio" name="kelamin" value="male" id="male"> Male 
+            </label><br>
+            <label for="female">
+                <input type="radio" name="kelamin" value="female" id="female"> Female
+            </label><br>
+            Kesukaan: <br>
+            <input type="checkbox" name="kesukaan" value="membaca"> Membaca
+            <input type="checkbox" name="kesukaan" value="Menulis"> Menulis <br>
+            File Tambahan
+            <input type="file" name="file tambahan"> <br>
+            Warna Pilihan
+            <input type="color">
+            <br>
+            <input type="search" placeholder="search">
+            <br>
+            <input type="url" placeholder="enter the url">
+            <br>
+            
+            Pilihan belajar: 
+            <select name= "belajar">
+                <option value="fiqh">Fiqh</option>
+                <option value="aqidah">aqidah</option>
+                <option value="hadits">hadits</option>
+            </select><br>
+            <!-- 
+            tulis option*jumlah{$} untuk urutan angka secara otomatis
+            ditambahkan @ untuk memulai angkanya contohnya option*115{$@1905}
+            ctrl+d untuk blok tag yang sama
+             -->
+            <select name="day">
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+            <br>
+            <select name="year">
+                <option>Year</option>
+                <option>1990</option>
+                <option>1991</option>
+                <option>1992</option>
+                <option>1993</option>
+                <option>1994</option>
+                <option>1995</option>
+                <option>1996</option>
+                <option>1997</option>
+                <option>1998</option>
+                <option>1999</option>
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+                <option>2007</option>
+                <option>2008</option>
+                <option>2009</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+            </select>
+            <br>
 
-		<input type="submit" Value="Kirim">
-		<input type="reset" name="reset" value="Reset">
-		<hr size: 3, noshade>
+           
+            Film 
+            <input list="film" name="film" placeholder="Favourite Film">
+            <datalist id="film">
+                <option value="Iron Man">Marvel</option>
+                <option value="Batman">DC</option>
+            </datalist><br>
 
-		<!-- tabel -->
-		<table border="1">
-			<tr>
-				<th colspan="3">Agama</th>
-			</tr>
-			<tr>
-				<td>Islam</td>
-				<td>Nasrani</td>
-				<td>Yahudi</td>
-			</tr>
-		</table>
-		<hr size: 3, noshade>
+            
+            Beri Masukan<br>
+            <textarea name="masukan" rows="5" cols="50"></textarea><br>
 
-		<!-- tabel 2 -->
-		<h3>Skills</h3>
-		<table border="1">
-			<td>
-				<table cellspacing="10">
-					<tr>
-						<td>Web Development</td>
-						<td>⭐⭐⭐</td>
-					</tr>
-					<tr>
-						<td>Video editor</td>
-						<td>⭐⭐</td>
-					</tr>
-				</table>
-			</td>
-			<td>
-				<table cell cellspacing="10">
-					<tr>
-						<td>Teaching</td>
-						<td>⭐⭐⭐⭐</td>
-					</tr>
-					<tr>
-						<td>Public Speaking</td>
-						<td>⭐⭐⭐⭐</td>
-					</tr>
-				</table>
-			</td>
-		</table>
-
+            <button type="button" onclick="alert (
+            'Hell0')">Click me!</button>
+            <input type="submit" Value="Kirim">
+            <input type="reset" name="reset" value="Reset">
+        </form>
+            <hr size: 3, noshade>
+    
+            <!-- tabel -->
+            <table border="1">
+                <caption>Nama Agama</caption>
+                <tr>
+                    <th colspan="3">Agama</th>
+                </tr>
+                <tr>
+                    <td>Islam</td>
+                    <td>Nasrani</td>
+                    <td>Yahudi</td>
+                </tr>
+            </table>
+            <hr size: 3, noshade>
+    
+            <!-- tabel 2 -->
+            <h3>Skills</h3>
+            <table border="1">
+                <td>
+                    <table cellspacing="10">
+                        <tr>
+                            <td>Web Development</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Video editor</td>
+                            <td>⭐⭐</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table cell cellspacing="10">
+                        <tr>
+                            <td>Teaching</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Public Speaking</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                    </table>
+                </td>
+            </table>
+    
+    </body>
 </body>
 </html>
